@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Your Name</title>
+  <meta name="description" content="Academic homepage of Dr. Your Name" />
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --line: #e5e7eb;
+      --link: #111827;
+      --link-hover: #374151;
+      --maxw: 760px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.65;
+    }
+
+    .wrap {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 56px 24px 80px;
+    }
+
+    header {
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 28px;
+      margin-bottom: 40px;
+    }
+
+    h1, h2 {
+      margin: 0;
+      font-weight: 600;
+      color: #111827;
+    }
+
+    h1 {
+      font-size: 2rem;
+      line-height: 1.2;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      margin-bottom: 14px;
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    .subtitle {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    nav {
+      margin-top: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      font-size: 0.98rem;
+    }
+
+    nav a,
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    nav a:hover,
+    a:hover {
+      color: var(--link-hover);
+      text-decoration: underline;
+    }
+
+    section {
+      margin-bottom: 34px;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 22px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    footer {
+      margin-top: 48px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .email {
+      word-break: break-word;
+    }
+
+    @media (max-width: 640px) {
+      .wrap {
+        padding: 40px 18px 64px;
+      }
+
+      h1 {
+        font-size: 1.75rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <h1>Dr. Your Name</h1>
+      <p class="subtitle">Department of Mathematics, Your University</p>
+      <p style="margin-top: 18px; max-width: 680px;">
+        I am a mathematician working in probability theory, random fields, and stochastic analysis.
+      </p>
+      <nav>
+        <a href="#research">Research</a>
+        <a href="#papers">Papers</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section id="research">
+      <h2>Research</h2>
+      <ul>
+        <li>Probability theory</li>
+        <li>Gaussian fields and branching processes</li>
+        <li>Stochastic PDE and random geometry</li>
+      </ul>
+    </section>
+
+    <section id="papers">
+      <h2>Selected papers</h2>
+      <ul>
+        <li><a href="#">Title of Paper One</a> (2026)</li>
+        <li><a href="#">Title of Paper Two</a> (2025)</li>
+        <li><a href="#">Title of Paper Three</a> (2024)</li>
+      </ul>
+    </section>
+
+    <section id="teaching">
+      <h2>Teaching</h2>
+      <p>Add current courses, lecture notes, or office hours here.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p class="email"><a href="mailto:your.name@university.edu">your.name@university.edu</a></p>
+    </section>
+
+    <footer>
+      <p>© 2026 Your Name</p>
+    </footer>
+  </main>
+</body>
+</html>
